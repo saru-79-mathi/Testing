@@ -3,7 +3,19 @@
 <suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test" verbose="2">
     <classes>
-      <class name="selenium.Ques3"/>
+      <class name="selenium.Ques4"/>
     </classes>
   </test> <!-- Default test -->
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="selenium.Ques4">
+        <methods>
+          <include name="login"/>
+          <include name="close"/>
+          <include name="openUrl"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- selenium.Ques4 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

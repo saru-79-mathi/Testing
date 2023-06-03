@@ -1,25 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-02T07:12:35Z" name="Default suite" finished-at="2023-06-02T07:13:03Z" duration-ms="28140">
+  <suite started-at="2023-06-03T04:01:45Z" name="Default suite" finished-at="2023-06-03T04:02:26Z" duration-ms="41230">
     <groups>
     </groups>
-    <test started-at="2023-06-02T07:12:35Z" name="Default test" finished-at="2023-06-02T07:13:03Z" duration-ms="28140">
-      <class name="selenium.Ques3">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:selenium.Ques3@65b104b9]" started-at="2023-06-02T12:42:35Z" name="beforeMethod" finished-at="2023-06-02T12:42:54Z" duration-ms="18706" status="PASS">
+    <test started-at="2023-06-03T04:01:45Z" name="Default test" finished-at="2023-06-03T04:02:26Z" duration-ms="41230">
+      <class name="selenium.Ques4">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:selenium.Ques4@6c4980d3]" started-at="2023-06-03T09:31:45Z" name="openUrl" finished-at="2023-06-03T09:31:59Z" duration-ms="13948" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="underMethod()[pri:0, instance:selenium.Ques3@65b104b9]" started-at="2023-06-02T12:42:54Z" name="underMethod" finished-at="2023-06-02T12:43:02Z" duration-ms="8793" status="PASS">
+        </test-method> <!-- openUrl -->
+        <test-method signature="login()[pri:0, instance:selenium.Ques4@6c4980d3]" started-at="2023-06-03T09:31:59Z" name="login" finished-at="2023-06-03T09:32:09Z" duration-ms="9920" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- underMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:selenium.Ques3@65b104b9]" started-at="2023-06-02T12:43:03Z" name="afterMethod" finished-at="2023-06-02T12:43:03Z" duration-ms="600" status="PASS">
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="close()[pri:0, instance:selenium.Ques4@6c4980d3]" started-at="2023-06-03T09:32:09Z" name="close" finished-at="2023-06-03T09:32:10Z" duration-ms="486" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- selenium.Ques3 -->
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:selenium.Ques4@6c4980d3]" started-at="2023-06-03T09:32:10Z" name="openUrl" finished-at="2023-06-03T09:32:21Z" duration-ms="11811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="logout()[pri:0, instance:selenium.Ques4@6c4980d3]" started-at="2023-06-03T09:32:21Z" name="logout" finished-at="2023-06-03T09:32:26Z" depends-on-methods="selenium.Ques4.login" duration-ms="4571" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/span"}
+  (Session info: MicrosoftEdge=113.0.1774.57)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [fd9afc018cf36065fef7e2a9c735a101, findElement {using=xpath, value=//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/span}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 113.0.1774.57, ms:edgeOptions: {debuggerAddress: localhost:54986}, msedge: {msedgedriverVersion: 113.0.1774.57 (b3b212deff59..., userDataDir: C:\Users\user\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54986/devtoo..., se:cdpVersion: 113.0.1774.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fd9afc018cf36065fef7e2a9c735a101]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/span"}
+  (Session info: MicrosoftEdge=113.0.1774.57)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [fd9afc018cf36065fef7e2a9c735a101, findElement {using=xpath, value=//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/span}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 113.0.1774.57, ms:edgeOptions: {debuggerAddress: localhost:54986}, msedge: {msedgedriverVersion: 113.0.1774.57 (b3b212deff59..., userDataDir: C:\Users\user\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54986/devtoo..., se:cdpVersion: 113.0.1774.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fd9afc018cf36065fef7e2a9c735a101
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at selenium.Ques4.logout(Ques4.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="close()[pri:0, instance:selenium.Ques4@6c4980d3]" started-at="2023-06-03T09:32:26Z" name="close" finished-at="2023-06-03T09:32:26Z" duration-ms="432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- selenium.Ques4 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
